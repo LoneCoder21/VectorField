@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 add_subdirectory(vendor/SFML)
+add_subdirectory(vendor/glm)
 
 project(VectorField)
 
@@ -16,6 +17,7 @@ target_link_libraries(VectorField debug sfml-window-d.lib optimized sfml-window.
 target_link_libraries(VectorField debug sfml-system-d.lib optimized sfml-system.lib)
 
 target_include_directories(VectorField PRIVATE "vendor/SFML/include")
+target_include_directories(VectorField PRIVATE "vendor/glm")
 
 file(COPY vendor/SFML/lib/Debug/sfml-graphics-d-2.dll DESTINATION Debug/)
 file(COPY vendor/SFML/lib/Debug/sfml-window-d-2.dll DESTINATION Debug/)
