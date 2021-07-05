@@ -387,11 +387,11 @@ FodyWeavers.xsd
 .idea/
 *.sln.iml
 
-*.filters
-*.vcxproj
-*.filters
-*.cmake
-*.sln
+**/*.filters
+**/*.vcxproj
+**/*.filters
+**/*.cmake
+**/*.sln
 
 CMakeLists.txt.user
 CMakeCache.txt
